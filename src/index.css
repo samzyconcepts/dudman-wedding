@@ -1,13 +1,42 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'NeueMachina';
+  src: url(font/NeueMachina-Light.otf) format('opentype');
+  font-weight: light;
+}
+@font-face {
+  font-family: 'NeueMachina';
+  src: url(font/NeueMachina-Regular.otf) format('opentype');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'NeueMachina';
+  src: url(font/NeueMachina-Ultrabold.otf) format('opentype');
+  font-weight: bold;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --magenta: #dd1155;
+  --purple : #4c2a85;
+  --black: #0c1713;
+  --white: #F9F7FD;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+body {
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

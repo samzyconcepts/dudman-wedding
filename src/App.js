@@ -1,22 +1,19 @@
 import './App.css';
-import { useTypewriter, Cursor } from 'react-simple-typewriter';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+// Component
+import Navbar from './component/Navbar';
+import Home from './Pages/Home';
 
 function App() {
-  const [text] = useTypewriter({
-    words: ['Coming Soon...'],
-    loop: {},
-  });
-
   return (
     <div className='App'>
-      <header className='App-header'>
-        <h1>
-          {text}
-          <span>
-            <Cursor />
-          </span>
-        </h1>
-      </header>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Home />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

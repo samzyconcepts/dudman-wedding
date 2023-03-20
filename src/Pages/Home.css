@@ -1,0 +1,48 @@
+#home {
+  background: url(../images/landscape-hero.webp) no-repeat center;
+  background-position-y: -100px;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  isolation: isolate;
+}
+
+#home::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 1));
+}
+
+#home .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  padding-bottom: 6.25rem;
+  color: var(--white);
+}
+
+#home .container h1 {
+  font-size: 13.7rem;
+  line-height: 1;
+}
+#home .container p {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  #home {
+    background: url(../images/portrait-hero.webp);
+    background-size: cover;
+  }
+  #home .container h1{
+    font-size: 7.5rem;
+  }
+  #home .container p {
+    font-size: 0.875rem;
+  }
+}

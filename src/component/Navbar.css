@@ -1,5 +1,4 @@
-nav {
-  /* background: var(--black); */
+.nav {
   height: 4rem;
   width: 100%;
   position: fixed;
@@ -7,53 +6,66 @@ nav {
   z-index: 100;
 }
 
-nav .container-lg {
+.nav.nav-bg {
+  background: var(--white);
+}
+
+.nav.nav-bg a {
+  color: var(--black);
+}
+
+.nav .container-lg {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
 }
 
-nav .links {
+.nav .links {
   display: flex;
   gap: 20px;
 }
 
-nav a {
+.nav a {
   color: var(--white);
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
-nav a:hover {
+.nav a:hover {
   color: var(--purple);
 }
 
-.bx.bx-menu, .bx.bx-x{
+.bx.bx-menu,
+.bx.bx-x {
   display: none;
   font-size: 1.5rem;
   color: var(--white);
 }
 
-@media (max-width: 600px){
-  .bx.bx-menu{
+.nav-bg .bx.bx-menu{
+  color: var(--black);
+}
+
+@media (max-width: 600px) {
+  .bx.bx-menu {
     display: block;
   }
 
-  .bx.bx-x{
+  .bx.bx-x {
     display: block;
-    position:absolute;
+    position: absolute;
     top: 10px;
     right: 20px;
     border: none;
   }
 
-  nav h3{
+  .nav h3 {
     font-size: 14px;
     font-weight: 300;
   }
 
-  nav .links{
+  .nav .links {
     flex-direction: column;
     position: absolute;
     top: 0;
@@ -65,12 +77,13 @@ nav a:hover {
     transition: right 0.4s ease-in-out;
   }
 
-  nav .links > *{
+  .nav .links > * {
     border-bottom: 1px solid var(--white);
     padding: 20px 0;
+    color: var(--white) !important;
   }
 
-  nav .links.active{
+  .nav .links.active {
     right: 0;
   }
 }

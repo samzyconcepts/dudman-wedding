@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 // css
 import './Home.css';
 
-const Home = () => {
+const Home = ({ info, story, gallery, party, home }) => {
   const [text] = useTypewriter({
     words: [
       'We are getting married',
@@ -16,7 +16,7 @@ const Home = () => {
 
   return (
     <>
-      <header id='home'>
+      <header ref={home} id='home'>
         <div className='container'>
           <p>{text}</p>
           <h1>O&O</h1>
@@ -24,7 +24,7 @@ const Home = () => {
         </div>
       </header>
 
-      <section id='info'>
+      <section ref={info} id='info'>
         <div className='container'>
           <div className='rsvp'>
             <h3>
@@ -59,7 +59,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section id='story'>
+      <section ref={story} id='story'>
         <div className='container'>
           <h3>A BRIEF HISTORY OF LOVE</h3>
           <p className='story'>
@@ -105,6 +105,9 @@ const Home = () => {
           </p>
         </div>
       </section>
+
+      <section ref={party} className='party'></section>
+      <section ref={gallery} className='gallery'></section>
 
       <footer>
         <div className='container'>

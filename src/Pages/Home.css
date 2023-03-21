@@ -97,9 +97,52 @@
 }
 
 /* Our Story */
-#story{
+#story {
+  background: url(../images/storybg.png) no-repeat center center/cover;
+  background-position-y: top;
+  background-blend-mode: multiply;
   padding: 6.25rem 0;
   background-color: var(--purple);
+  color: var(--white);
+}
+
+#story h3 {
+  font-size: 40px;
+  color: var(--magenta);
+  text-align: center;
+  line-height: 3;
+}
+
+#story p {
+  line-height: 2;
+}
+
+/* footer */
+footer {
+  padding: 6.25rem 0 4rem;
+  text-align: center;
+  background-color: var(--white);
+}
+footer .l-heading {
+  font-size: 40px;
+  color: var(--purple);
+}
+
+footer .line {
+  width: 200px;
+  height: 2px;
+  background-color: var(--magenta);
+  margin: 2rem auto;
+}
+
+footer h3 {
+  font-size: 48px;
+}
+
+footer .container-lg {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6rem;
 }
 
 @media (max-width: 600px) {
@@ -117,5 +160,30 @@
   /* Info */
   #info .container {
     flex-direction: column-reverse;
+  }
+
+  /* story */
+  #story h3 {
+    line-height: 1;
+  }
+  #story p {
+    text-align: center;
+  }
+  #story p > span {
+    font-size: 14px;
+  }
+
+  /* footer */
+  footer .l-heading {
+    font-size: 24px;
+  }
+  footer .container-lg {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+
+  footer .container-lg p {
+    line-height: 2;
+    font-size: 14px;
   }
 }

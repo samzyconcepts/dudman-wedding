@@ -62,7 +62,7 @@ const Home = () => {
       <section id='story'>
         <div className='container'>
           <h3>A BRIEF HISTORY OF LOVE</h3>
-          <p>
+          <p className='story'>
             Oluwaseun and I met during my ND days in 2013. He just handed over
             as an exco in my campus fellowship CGACCF (Christ Gospel Apostolic
             Campus Fellowship). We hardly talk🤷🏿‍♀️ wetin I wan dey follow MOG a
@@ -97,12 +97,36 @@ const Home = () => {
             7yrs ago, I started this beautiful journey with my DUD and now we
             are taking it to forever💕💕..... <br />
             STIMMY Said Yes To DUD <br /> <br />
-            #Sti'Dud <br />
-            #Dud'Sti In Love <br />
-            #Thefashiondesignerandphotographerlovestory
+            <span>
+              #Sti'Dud <br />
+              #Dud'Sti In Love <br />
+              #Thefashiondesignerandphotographerlovestory
+            </span>
           </p>
         </div>
       </section>
+
+      <footer>
+        <div className='container'>
+          <p className='l-heading'>
+            In lieu of gifts, we would greatly appreciate if they could be
+            converted into monetary donations.
+          </p>
+          <div className='line'></div>
+          <h3>O&O</h3>
+          <span>April 20, 2023 </span>
+        </div>
+        <div className='container-lg'>
+          <p>
+            <span> #Sti'Dud </span>
+            <span>#Dud'Sti In Love </span>
+            <span>#Thefashiondesignerandphotographerlovestory</span>
+          </p>
+          <p>
+            Created with ❤️ by <b>Samzy</b>
+          </p>
+        </div>
+      </footer>
     </>
   );
 };

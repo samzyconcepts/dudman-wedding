@@ -34,15 +34,88 @@
   font-size: 1.5rem;
 }
 
+/* Info */
+#info {
+  background-color: var(--white);
+  padding: 6.25rem 0;
+}
+
+#info .container {
+  display: flex;
+  gap: 100px;
+}
+
+#info h3 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+#info .btn {
+  display: inline-block;
+  padding: 15px 60px;
+  margin-top: 20px;
+  background-color: var(--magenta);
+  color: var(--white);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#info .btn:hover {
+  background-color: rgb(100, 4, 34);
+}
+
+#info .detail > * {
+  line-height: 2;
+}
+
+#info .detail span {
+  color: var(--magenta);
+}
+#info .detail div:not(:last-child) {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--black);
+}
+#info .detail div:not(:first-child) {
+  padding-top: 20px;
+}
+
+#info .detail .when p:last-child {
+  font-style: italic;
+  font-size: 14px;
+}
+
+#info .detail .where a {
+  display: inline-block;
+  color: var(--black);
+  text-decoration: none;
+  border-bottom: 2px solid var(--magenta);
+  margin-top: 10px;
+}
+#info .detail .where a:hover {
+  color: var(--magenta);
+}
+
+/* Our Story */
+#story{
+  padding: 6.25rem 0;
+  background-color: var(--purple);
+}
+
 @media (max-width: 600px) {
   #home {
     background: url(../images/portrait-hero.webp);
     background-size: cover;
   }
-  #home .container h1{
+  #home .container h1 {
     font-size: 7.5rem;
   }
   #home .container p {
     font-size: 0.875rem;
+  }
+
+  /* Info */
+  #info .container {
+    flex-direction: column-reverse;
   }
 }

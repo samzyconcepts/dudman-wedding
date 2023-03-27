@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import './Navbar.css';
@@ -35,16 +35,44 @@ function Navbar({ func, info, story, gallery, party, home }) {
 
         <i onClick={handleClick} className='bx bx-menu'></i>
         <div className={`links${toggleLinkCheck}`}>
-          <Link to='#info' onClick={() => func(info)}>
+          <Link
+            to='#info'
+            className='link'
+            onClick={() => {
+              func(info);
+              handleClick();
+            }}
+          >
             Info & RSVP
           </Link>
-          <Link to='#story' onClick={() => func(story)}>
+          <Link
+            to='#story'
+            className='link'
+            onClick={() => {
+              func(story);
+              handleClick();
+            }}
+          >
             Our Story
           </Link>
-          <Link to='#party' onClick={() => func(party)}>
+          <Link
+            to='#party'
+            className='link'
+            onClick={() => {
+              func(party);
+              handleClick();
+            }}
+          >
             Party
           </Link>
-          <Link to='#gallery' onClick={() => func(gallery)}>
+          <Link
+            to='#gallery'
+            className='link'
+            onClick={() => {
+              func(gallery);
+              handleClick();
+            }}
+          >
             Gallery
           </Link>
           <i className='bx bx-x' onClick={handleClick}></i>

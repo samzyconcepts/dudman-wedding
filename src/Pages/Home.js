@@ -49,7 +49,7 @@ const Home = ({ info, story, gallery, party, home }) => {
                 CHRIST GOSPEL APOSTOLIC CHURCH (Chapel of Mercy/Oke Anu), 14,
                 Holy Saviours College Road, Isolo, Lagos
               </p>
-              <Link to='#'>Get Directions</Link>
+              <Link to='/location'>Get Directions</Link>
             </div>
             <div className='dress'>
               <span>DRESS CODE</span>
@@ -96,7 +96,7 @@ const Home = ({ info, story, gallery, party, home }) => {
             good at what he does 🙌🏿🙌🏿). <br />
             7yrs ago, I started this beautiful journey with my DUD and now we
             are taking it to forever💕💕..... <br />
-            STIMMY Said Yes To DUD <br /> <br />
+            STIMMY and Dudman are getting married.... <br /> <br />
             <span>
               #Sti'Dud <br />
               #Dud'Sti In Love <br />
@@ -106,8 +106,82 @@ const Home = ({ info, story, gallery, party, home }) => {
         </div>
       </section>
 
-      <section ref={party} className='party'></section>
-      <section ref={gallery} className='gallery'></section>
+      <section ref={party} className='party'>
+        <div className='container'>
+          <div className='box'>
+            <div className='img'>
+              <img src='./img/damilola.JPG' alt='Olaseni Damilola' />
+            </div>
+            <div className='text'>
+              <span className='title'>BEST LADY</span>
+              <p>Olaseni Damilola</p>
+            </div>
+          </div>
+
+          <div className='box'>
+            <div className='img'>
+              <img src='./img/bukola.JPG' alt='Badejo Bukola' />
+            </div>
+            <div className='text'>
+              <span className='title'>BRIDES MAID</span>
+              <p>Badejo Bukola</p>
+            </div>
+          </div>
+
+          <div className='box'>
+            <div className='img'>
+              <img src='./img/naomi.jpg' alt='Asala Naomi' />
+            </div>
+            <div className='text'>
+              <span className='title'>BRIDES MAID</span>
+              <p>Asala Naomi</p>
+            </div>
+          </div>
+
+          <div className='box'>
+            <div className='img'>
+              <img src='./img/blessing.jpg' alt='Sonoiki Blessing' />
+            </div>
+            <div className='text'>
+              <span className='title'>BRIDES MAID</span>
+              <p>Sonoiki Blessing</p>
+            </div>
+          </div>
+
+          <div className='box'>
+            <div className='img'>
+              <img src='./img/pelumi.jpg' alt='Afolabi Pelumi' />
+            </div>
+            <div className='text'>
+              <span className='title'>BRIDES MAID</span>
+              <p>Afolabi Pelumi</p>
+            </div>
+          </div>
+
+          <div className='box'>
+            <div className='img'>
+              <img src='./img/progress.jpg' alt='Adeparusi Progress' />
+            </div>
+            <div className='text'>
+              <span className='title'>BRIDES MAID</span>
+              <p>Adeparusi Progress</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section ref={gallery} className='gallery'>
+        <div className='container'>
+          <div className='img-grid'>
+            <img src='./img/IMG_8523.jpg' alt='' />
+            <img src='./img/IMG_8529.jpg' alt='' />
+            <img src='./img/IMG_8559.jpg' alt='' />
+            <img src='./img/IMG_8565.jpg' alt='' />
+            <img src='./img/IMG_8592.jpg' alt='' />
+            <img src='./img/IMG_8594.jpg' alt='' />
+          </div>
+          {/* <Link>See More...</Link> */}
+        </div>
+      </section>
 
       <footer>
         <div className='container'>

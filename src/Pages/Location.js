@@ -1,8 +1,16 @@
-import { useMemo } from 'react';
-import { GoogleMap, useLoadScript, Marker } from '@react-google-maps/api';
+import { useEffect } from 'react';
 
-const Location = () => {
-  return <div></div>;
-};
+export default function Home() {
+  useEffect(() => {
+    const iframeData = document.querySelector('#iframeId');
+    const lat = 6.533429548065941;
+    const lon = 3.329392150720311;
+    iframeData.src = `https://maps.google.com/maps?q=${lat},${lon}&hl=es;&output=embed`;
+  });
 
-export default Location;
+  return (
+    <div>
+      <iframe title='church map' id='iframeId' height='1000px' width='100%'></iframe>
+    </div>
+  );
+}

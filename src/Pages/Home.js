@@ -167,6 +167,64 @@ const Home = ({ info, story, gallery, party, home }) => {
               <p>Adeparusi Progress</p>
             </div>
           </div>
+
+          <div className='box'>
+            <div className='img'>
+              <img src='./img/ogooluwa.jpg' alt='Ogooluwa' />
+            </div>
+            <div className='text'>
+              <span className='title'>BEST MAN</span>
+              <p>Ogooluwa</p>
+            </div>
+          </div>
+          <div className='box'>
+            <div className='img'>
+              <img src='./img/adegoke.jpg' alt='adegoke' />
+            </div>
+            <div className='text'>
+              <span className='title'>GROOMS MAN</span>
+              <p>Adegoke Peter</p>
+            </div>
+          </div>
+
+          <div className='box'>
+            <div className='img'>
+              <img src='./img/asaolu.jpg' alt='Asaolu' />
+            </div>
+            <div className='text'>
+              <span className='title'>GROOMS MAN</span>
+              <p>Asaolu</p>
+            </div>
+          </div>
+
+          <div className='box'>
+            <div className='img'>
+              <img src='./img/emma2.jpg' alt='Emmanuel' />
+            </div>
+            <div className='text'>
+              <span className='title'>GROOMS MAN</span>
+              <p>Emmanuel</p>
+            </div>
+          </div>
+          
+          <div className='box'>
+            <div className='img'>
+              <img src='./img/tobby.jpg' alt='Tobby' />
+            </div>
+            <div className='text'>
+              <span className='title'>GROOMS MAN</span>
+              <p>Tobby</p>
+            </div>
+          </div>
+          <div className='box'>
+            <div className='img'>
+              <img src='./img/odejobi.jpeg' alt='Odejobi' />
+            </div>
+            <div className='text'>
+              <span className='title'>GROOMS MAN</span>
+              <p>Odejobi Olalekan Ridwan</p>
+            </div>
+          </div>
         </div>
       </section>
       <section ref={gallery} className='gallery'>

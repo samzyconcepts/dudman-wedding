@@ -65,6 +65,15 @@
   background-color: rgb(100, 4, 34);
 }
 
+#info .rsvp p {
+  font-size: 20px;
+  margin-top: 1.5rem;
+}
+
+#info .live{
+  font-size: 16px;
+}
+
 #info .detail > * {
   line-height: 2;
 }
@@ -85,14 +94,15 @@
   font-size: 14px;
 }
 
-#info .detail .where a {
+#info .detail .where a,
+.live {
   display: inline-block;
   color: var(--black);
   text-decoration: none;
   border-bottom: 2px solid var(--magenta);
   margin-top: 10px;
 }
-#info .detail .where a:hover {
+#info .detail .where a:hover, .live:hover {
   color: var(--magenta);
 }
 
@@ -285,7 +295,7 @@ footer .container-lg {
 
   /* gallery */
   .gallery .container .img-grid {
-      grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
   .gallery .container .img-grid img {
     width: 100%;

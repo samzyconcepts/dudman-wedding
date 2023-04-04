@@ -34,6 +34,10 @@ const Home = ({ info, story, gallery, party, home }) => {
             <Link to='#' className='btn btn-primary'>
               RSVP
             </Link>
+            <p>
+              To Watch us live click below <br />
+            </p>
+            <Link to='https://youtube.com/@visiontv5989' className='live'>Livestream</Link>
           </div>
           <div className='detail'>
             <div className='when'>
@@ -206,7 +210,7 @@ const Home = ({ info, story, gallery, party, home }) => {
               <p>Emmanuel</p>
             </div>
           </div>
-          
+
           <div className='box'>
             <div className='img'>
               <img src='./img/tobby.jpg' alt='Tobby' />

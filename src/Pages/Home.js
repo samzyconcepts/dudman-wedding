@@ -171,6 +171,15 @@ const Home = ({ info, story, gallery, party, home }) => {
               <p>Adeparusi Progress</p>
             </div>
           </div>
+          <div className='box'>
+            <div className='img'>
+              <img src='./img/kemi.jpeg' alt='Adebayo Oluwakemi' />
+            </div>
+            <div className='text'>
+              <span className='title'>BRIDES MAID</span>
+              <p>Adebayo Oluwakemi</p>
+            </div>
+          </div>
 
           <div className='box'>
             <div className='img'>

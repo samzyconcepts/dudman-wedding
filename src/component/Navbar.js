@@ -75,6 +75,9 @@ function Navbar({ func, info, story, gallery, party, home }) {
           >
             Gallery
           </Link>
+          <Link to='/vendors' className='link' onClick={handleClick}>
+            Vendors
+          </Link>
           <i className='bx bx-x' onClick={handleClick}></i>
         </div>
       </div>

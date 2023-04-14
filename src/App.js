@@ -5,7 +5,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // Component
 import Navbar from './component/Navbar';
 import Home from './Pages/Home';
-import Location from './Pages/Location'
+import Location from './Pages/Location';
+import Vendors from './Pages/Vendors'
 
 function App() {
   const info = useRef(null);
@@ -45,7 +46,8 @@ function App() {
               />
             }
           />
-          <Route path='/location' element=<Location />/>
+          <Route path='/location' element=<Location /> />
+          <Route path='/vendors' element=<Vendors /> />
         </Routes>
       </Router>
     </div>

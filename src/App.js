@@ -1,57 +1,25 @@
-import { useRef } from 'react';
-import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 // Component
-import Navbar from './component/Navbar';
-import Home from './Pages/Home';
-import Location from './Pages/Location';
+import Navbar from './component/Navbar'
+import Home from './Pages/Home'
+import Location from './Pages/Location'
 import Vendors from './Pages/Vendors'
 
 function App() {
-  const info = useRef(null);
-  const story = useRef(null);
-  const party = useRef(null);
-  const gallery = useRef(null);
-  const home = useRef(null);
-
-  const scrollToSection = (elementRef) => {
-    window.scrollTo({
-      top: elementRef.current.offsetTop,
-      behavior: 'smooth',
-    });
-  };
-
-  return (
-    <div className='App'>
-      <Router>
-        <Navbar
-          func={scrollToSection}
-          info={info}
-          story={story}
-          party={party}
-          gallery={gallery}
-          home={home}
-        />
-        <Routes>
-          <Route
-            path='/'
-            element={
-              <Home
-                info={info}
-                story={story}
-                party={party}
-                gallery={gallery}
-                home={home}
-              />
-            }
-          />
-          <Route path='/location' element=<Location /> />
-          <Route path='/vendors' element=<Vendors /> />
-        </Routes>
-      </Router>
-    </div>
-  );
+	return (
+		<div className='App'>
+			<Router>
+				<Navbar />
+				<Routes>
+					<Route path='/' element=<Home /> />
+					<Route path='/location' element=<Location /> />
+					<Route path='/vendors' element=<Vendors /> />
+				</Routes>
+			</Router>
+		</div>
+	)
 }
 
-export default App;
+export default App
